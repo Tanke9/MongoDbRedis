@@ -1,0 +1,43 @@
+Las bases de datos NoSQL han cambiando la forma de resolver muchos problemas de
+almacenamiento y escalamiento de datos. En este artículo verás algunos de los problemas
+comunes que resuelve una base de datos no relacional y que podrás implementar en tu
+aplicación, sitio web o incluso un juego.
+
+Full Page Cache
+
+Redis y Memcache son dos bases de datos NoSQL muy utilizadas a la hora de aplicar la
+técnica de Full Page Cache para disminuir el tiempo de carga y el consumo de recursos
+en un aplicación web. Full Page Cache consiste en renderizar una página web y guardar
+el HTML en una base de datos, para que cuando otros usuarios soliciten el recurso pueda
+ser respondido casi de inmediato sin necesidad de hacer nuevamente un render de la
+página.
+
+Esta aplicación está muy extendida y es importante en muchos tipos de aplicaciones
+ acudir a una base de datos NoSQL para implementarla.
+
+
+Query caching
+
+Algunas veces no es posible realizar cache de todo el HTML de una página web, en esos
+casos se pueden implementar otra técnica como Query Caching.
+
+Query Caching consiste en almacenar el resultado de una consulta a la base de datos, de
+esta manera si en el futuro se requiere la misma información se puede consultar rápidamente sin necesidad de hacer la consulta completa. Los motores de bases de datos como MySQL y Postgres ofrecen esta funcionalidad, pero con Redis también se podría hacer y obtener mejores resultados si tu aplicación es bastante concurrida.
+
+
+Leaderboard
+
+Es común en juegos crear una tabla de clasificación de jugadores con sus puntos para
+clasificación en un juego como League of Legends, Dota, Heroes of the Storm, Counter
+Strike. Estos juegos en línea y tiempo real requieren que los puntos estén actualizados y
+que la latencia de escritura y lectura sea baja.
+
+Redis ofrece esta posibilidad con ZADD, este tipo de datos es perfecto para implementar
+un sistema de clasificación en un juego e incluso para implementar gamification en tu aplicación.
+
+Multi propósitos
+
+Si deseas hacer una aplicación podrías usar NoSQL para cualquier cosa. MongoDB tiene
+el propósito de servir bajo cualquier circunstancia, es importante tener en cuenta qué
+podría necesitar tu software en el futuro y de esta manera poder complementar Mongo con
+algún otro motor de base de datos no relacional o con una base de datos SQL.
