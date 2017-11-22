@@ -1,0 +1,12 @@
+Introducción a Cryptongo
+El proyecto que vamos a desarrollar se llama Cryptongo, es un software escrito en Python
+donde tomamos información de coin marketapp y almacenarla en nuestra base de datos y
+así mostrar.
+
+Vamos a hacer una aplicación que se conecte cada 5 minutos y obtenga la información de
+todas las monedas y las almacene en nuestra base de datos en MongoDB.
+Aproximadamente vamos a guardar 1100 registros cada 5 minutos.
+Luego vamos a consultar directamente de la base de datos en Mongo usando un API Rest,
+sin tener que pasar por coin marketapp.
+
+RETO: Comenten todo acerca de sus experiencias con bases de datos no relacionales.
